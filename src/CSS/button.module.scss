@@ -36,8 +36,16 @@ $color-black: #000;
         //Change for the <button> element
         border: none;
         cursor: pointer;
+        outline: none;
+        
     }
     &White {
+        -webkit-box-shadow: -1px 9px 7px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 9px 7px -1px rgba(0,0,0,0.75);
+box-shadow: -1px 9px 7px -1px rgba(0,0,0,0.75);
+
+
+
         background-color:$color-tertiary-light;
         color: white;}
 
