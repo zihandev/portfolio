@@ -1,0 +1,151 @@
+.aboutMe{
+    margin-top: 5rem;
+    color: var(--text);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    transition: color 0.2s ease-out;
+   
+}
+
+
+.heading {
+    font-weight: 800;
+    text-transform: uppercase;
+    color : rgb(7, 95, 150);
+    
+
+    &::after{
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 25%; /* Change this to whatever width you want. */
+        padding-top: 1px; /* This creates some space between the element and the border. */
+        border-bottom: 1px solid rgb(45, 142, 221); /* This creates the border. Replace black with whatever color you want. */
+    }
+}
+
+.par{
+    font-size: 1rem;
+}
+
+
+.headings {
+    position: relative;
+    z-index: 0;
+    font-style: italic;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    word-break: break-word;
+    white-space: normal;
+   
+  
+   
+
+    &::after{
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform: rotate(-3deg);
+        background: rgb(4, 84, 150);
+        
+    }
+
+}
+
+
+.heading2 {
+    position: relative;
+    z-index: 0;
+    font-weight: 600;
+    display: inline-block;
+    word-break: break-word;
+    white-space: normal;
+}
+
+
+
+.skills {
+    font-size: .75rem;
+    color : rgb(7, 95, 150);
+    font-weight: 900;
+}
+
+
+.cv {
+    margin: 0rem 2rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+}
+
+.btn {
+
+
+    background-color: #0e78cf;
+    color: white;
+    overflow: hidden;
+    outline: none;
+    text-decoration: none;
+    border: .1px solid black;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: .6rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: .6rem 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: all .2s;
+}
+
+    .btn:hover {
+        background-color: #B28451;
+    }
+
+    .align {
+        display : flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .work {
+        margin-bottom: -.4em;
+       
+        font-size: .85rem;
+        font-weight: 800;
+        display : flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .worksub {
+        margin-top: -2rem;
+        font-weight: 400;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-gap: .5rem;
+        align-items: center;
+        font-style: italic;
+    }
+
+    .date {
+        font-weight: 600;
+        font-size: .8rem;
+        font-style: italic;
+    }
+
+    .colours {
+        color : rgb(7, 95, 150);
+        text-transform: uppercase;
+    }

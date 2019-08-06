@@ -1,0 +1,56 @@
+.contact{
+    margin-top: 5rem;
+
+    display : grid;
+    justify-items: center;
+}
+
+.heading {
+    font-weight: 800;
+    text-transform: uppercase;
+    color : rgb(7, 95, 150);
+}
+
+
+.talk{
+    margin-top: -1rem;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.gmail {
+    margin: 1.5rem 0;
+    font-size: .9rem;
+    font-weight: bolder;
+}
+
+.icon {
+    border-radius: 50%;
+    border: 1.1px solid blue;
+    padding : .3rem;
+
+}
+
+.social {
+    display : grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.copyright {
+    text-transform: uppercase;
+}
+
+.socialLinks {
+    outline: none;
+    text-decoration: none;
+    color: black;
+    
+    &:active,
+    &:visited,
+    &:hover {
+        border-radius: 50%;
+        border: 1.1px solid blue;
+        background-color: blue;
+    }
+}
