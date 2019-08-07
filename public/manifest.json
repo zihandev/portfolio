@@ -16,7 +16,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone",
   "description" : "Stay updated as we build awesome applications !",
   "theme_color": "#000000",
