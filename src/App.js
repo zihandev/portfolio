@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Navigation from './Components/Navigation';
 import Header from './Components/Header';
 import AboutMe from './Components/AboutMe';
@@ -12,7 +12,8 @@ import Portfolio from './Components/Portfolio';
 
 import styled from '@emotion/styled';
 import {useTheme} from './Theme/themeProvider'
-
+import Conditional from './Conditional'
+import styles from './CSS/button.module.scss'
 
 const Wrapping = styled('div')`
  background : ${props=> props.theme.background};
@@ -38,15 +39,49 @@ transition: all .8s cubic-bezier(.17,.67,.83,.67);
 `
 
 
-function App() {
+class App extends Component {
+ state = {
+   installButton : ''
+ }
 
 
+  installPrompt = null;
+  componentDidMount(){
+      console.log("Listening for Install prompt");
+      window.addEventListener('beforeinstallprompt',e=>{
+        // For older browsers
+        e.preventDefault();
+        console.log("Install Prompt fired");
+        this.installPrompt = e;
+        // See if the app is already installed, in that case, do nothing
+        if((window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true){
+          return false;
+        }
+        // Set the state variable to make button visible
+        this.setState({
+          installButton:true
+        })
+      })
+    }
 
-  React.useEffect(() => {
-    console.log('App component loaded')
-  }, []);
-
-
+    installApp=async ()=>{
+      if(!this.installPrompt) return false;
+      this.installPrompt.prompt();
+      let outcome = await this.installPrompt.userChoice;
+      if(outcome.outcome=='accepted'){
+        console.log("App Installed")
+      }
+      else{
+        console.log("App not installed");
+      }
+      // Remove the event reference
+      this.installPrompt=null;
+      // Hide the button
+      this.setState({
+        installButton:false
+      })
+    }
+    render(){
   return (
    <Wrapping>
    <StyledHeader >
@@ -57,7 +92,11 @@ function App() {
             setMenuOpened={(bool)=>console.log(bool)}
           /></Wrapper>
         </Contained></StyledHeader>
-   
+        <Conditional condition={this.state.installButton}
+             style={styles.btn}
+             onClick={this.installApp}>
+            Install As Application
+          </Conditional>
       <Navigation/>
       <Header/>
       <ScrollDown/>
@@ -68,6 +107,7 @@ function App() {
       {/* <h1>Hey There</h1> */}
       </Wrapping>
   );
+}
 }
 
 export default App;

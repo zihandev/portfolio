@@ -15,18 +15,19 @@ const AboutMe = () => {
     return (
         <div id='about-me' className={classes.aboutMe}>
         <h3 className={classes.heading}>About Me</h3>
-        <p className={classes.par}>I'm Mohammed Zihan, a full-stack software developer & designer.
-I've always been drawn to the overlap between design and development.</p>
+        <p className={classes.par}>I'm Mohammed Zihan, a full-stack software developer.
+Always been drawn to the overlap between design and development. As a developer, I enjoy using my obsessive attention to detail and my unequivocal love for making things.
+</p>
       
-             <p className={classes.par}> My skills are broad: from front end to back end development.
-I enjoy each aspect, and love building sites & mobile apps from start to finish, for clients all over the world.</p>
+             <p className={classes.par}>I’ve always sought out opportunities and challenges that are meaningful to me. 
+             Passionate about developing and deploying applications while continuously learning new stuffs.</p>
 
-<div>
+<div >
 <p className={classes.headings}>Experience :</p>
        <div className={classes.work}> <p className={classes.colours}>PROJECT COORDINATOR</p>
        <div className={classes.worksub}>   <p>Royex Technologies L.L.C </p><span className={classes.date}>(May 2018 - July 2019)</span> </div>   </div>
-       <div className={classes.work}> <p className={classes.colours}>SOFTWARE DEVELOPER</p>
-       <div className={classes.worksub}>   <p>AL Zohara IT & Media Solution </p><span className={classes.date}>(Jan 2018 - June 2018)</span> </div>   </div>
+       {/* <div className={classes.work}> <p className={classes.colours}>SOFTWARE DEVELOPER</p>
+       <div className={classes.worksub}>   <p>AL Zohara IT & Media Solution </p><span className={classes.date}>(Jan 2018 - June 2018)</span> </div>   </div> */}
        <div className={classes.work}> <p className={classes.colours}>IN PLANT TRAINEE</p>
        <div className={classes.worksub}>   <p>Bharath Heavy Electricals Limited</p><span className={classes.date}>(Jun 2017 - July 2017)</span> </div>   </div>
            </div>
