@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { animated, useSpring, config } from 'react-spring';
+import { animated } from 'react-spring';
 
 export const StyledHeader = styled(animated.header)`
   position: fixed;

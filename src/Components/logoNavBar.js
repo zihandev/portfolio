@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
-import { useTransition, animated } from 'react-spring';
+import { useTransition } from 'react-spring';
 
 import ScrollToTop from '../UI/scrollTop';
 import classes from '../CSS/header.module.scss';

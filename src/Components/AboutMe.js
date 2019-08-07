@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
-import { Link } from 'react-scroll';
 import classes from '../CSS/aboutme.module.scss';
-import ScrollToTop from '../UI/scrollTop';
-import { useTransition, animated } from 'react-spring';
+import { useTransition } from 'react-spring';
 import {FaFile, FaPaperPlane } from 'react-icons/fa'
 
 const AboutMe = () => {

@@ -4,8 +4,6 @@ import styled from 'styled-components';
 
 import classes from '../CSS/navigation.module.scss'
 
-import LogoNavbar from './logoNavBar';
-import ThemeButton from './themeButton';
 import Try from './try';
 
 class Navigation extends Component {
