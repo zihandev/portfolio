@@ -43,7 +43,7 @@ Always been drawn to the overlap between design and development. As a developer,
         
 
             <div className={classes.cv}>
-<a className={`${classes.btn} && ${classes.align}`}><FaPaperPlane/> &nbsp; Resume</a>
+<a href='https://www.dropbox.com/s/c5ey7lj4dq4pksz/Mohammed%20Zihan%20Resume.pdf?dl=0' target="_blank" className={`${classes.btn} && ${classes.align}`}><FaPaperPlane/> &nbsp; Resume</a>
 <a className={`${classes.btn} && ${classes.align}`} style={{backgroundColor:'white', color:'black', border:'1px solid black'}}><FaFile/> &nbsp;Curriculum</a>
 </div>
 
