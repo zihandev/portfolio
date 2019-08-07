@@ -6,6 +6,12 @@ import * as serviceWorker from './serviceWorker';
 
 import { ThemeProvider } from "./Theme/themeProvider";
 
+
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-145232993-1');
+
+ReactGA.pageview('/');
+
 ReactDOM.render(<ThemeProvider><App /></ThemeProvider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

@@ -23,6 +23,9 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen";
 li{
   color : ${props=>props.theme.body};
 }
+footer{
+  color : ${props=>props.theme.body};
+}
 section{
   color : ${props=>props.theme.body};
   background : ${props=> props.theme.background};
