@@ -44,7 +44,7 @@ Always been drawn to the overlap between design and development. As a developer,
 
             <div className={classes.cv}>
 <a href='https://www.dropbox.com/s/c5ey7lj4dq4pksz/Mohammed%20Zihan%20Resume.pdf?dl=0' target="_blank" className={`${classes.btn} && ${classes.align}`}><FaPaperPlane/> &nbsp; Resume</a>
-<a className={`${classes.btn} && ${classes.align}`} style={{backgroundColor:'white', color:'black', border:'1px solid black'}}><FaFile/> &nbsp;Curriculum</a>
+<a href='https://drive.google.com/open?id=1g6zN1yNbJlTykFuPNmCwn_v7eaY-iR7P' target="_blank" className={`${classes.btn} && ${classes.align}`} style={{backgroundColor:'white', color:'black', border:'1px solid black'}}><FaFile/> &nbsp;Curriculum</a>
 </div>
 
        {/* {ScrollTopTransition.map(
@@ -53,5 +53,6 @@ Always been drawn to the overlap between design and development. As a developer,
         </div>
     )
 }
+
 
 export default AboutMe;
