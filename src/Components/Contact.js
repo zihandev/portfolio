@@ -10,6 +10,7 @@ const Contact = () => {
             <h3 className={classes.heading}>Contact Me</h3>
             <p className={classes.talk}>If you want to <strong>talk</strong>, you can <strong>find me</strong> at :</p>
             <span className={classes.gmail}>mohammedzihan001@gmail.com</span>
+            <span className={classes.phone}>Mobile : +91-8951129095</span>
             <footer className={classes.social}>
                 <a className={classes.socialLinks} href='https://github.com/zihandev'  target="_blank"><FaGithub className={classes.icon} /></a>
                 <a className={classes.socialLinks} href='https://www.linkedin.com/in/mohammed-zihan/'  target="_blank"><FaLinkedinIn className={classes.icon}/></a>

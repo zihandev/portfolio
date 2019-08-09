@@ -55,7 +55,7 @@ const Portfolio = () => {
               <div className={classes.pros}>
                   <h5 className={classes.name}>Portfolio</h5>
                   <LazyLoad offset={200}><img className={classes.img} src='/Images/personal.PNG' alt='image' /> </LazyLoad>
-                  <p className={classes.text}>I wanted something fast and with good SEO for my portfolio, so a static website generator like Gatsby seemed like the best fit. It reads data from markdown files, making it easy to keep adding Portfolio items as I keep developing stuff. It also has a cool dark mode switch since I couldn't decide between a dark or light design.</p>
+                  <p className={classes.text}>I wanted something fast and with good SEO for my portfolio, so a static website generator like Gatsby seemed like the best fit. It reads data from markdown files, making it easy to keep adding Portfolio items as I keep developing stuff. It also has a cool dark mode switch since I couldn't decide between a dark or light design. PWA Optimized too !</p>
                   <h5 className={classes.tech}>React - React Hooks - Styled Components - Gatsby - Netlify </h5>
                   <a href='https://zihandev.netlify.com/' target="_blank" className={classes.btn}><FaGithub/> &nbsp;Source</a>
               </div>

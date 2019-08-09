@@ -25,7 +25,7 @@ Always been drawn to the overlap between design and development. As a developer,
 <div >
 <p className={classes.headings}>Experience :</p>
        <div className={classes.work}> <p className={classes.colours}>PROJECT COORDINATOR</p>
-       <div className={classes.worksub}>   <p>Royex Technologies L.L.C </p><span className={classes.date}>(May 2018 - July 2019)</span> </div>   </div>
+       <div className={classes.worksub}>   <p>Royex Technologies L.L.C </p><span className={classes.date}>(May 2018 - June 2019)</span> </div>   </div>
        {/* <div className={classes.work}> <p className={classes.colours}>SOFTWARE DEVELOPER</p>
        <div className={classes.worksub}>   <p>AL Zohara IT & Media Solution </p><span className={classes.date}>(Jan 2018 - June 2018)</span> </div>   </div> */}
        <div className={classes.work}> <p className={classes.colours}>IN PLANT TRAINEE</p>
